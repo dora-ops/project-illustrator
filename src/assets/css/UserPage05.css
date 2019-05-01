@@ -1,0 +1,153 @@
+.my-box{
+  padding-left: 20px;
+}
+
+.my-left{
+  width: 70px;
+  height: 100px;
+}
+
+.my-left img{
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+
+.my-left .modify{
+  line-height: 20px;
+  width: 70px;
+  background: #f7f7f7;
+  cursor: pointer;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.my-right{
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.modify1{
+  font-size: 14px;
+  background: #5599ff;
+  border-radius: 2px;
+  margin-left: 5px;
+  color: #fff;
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modify2{
+  font-size: 14px;
+  background: #5599ff;
+  border-radius: 2px;
+  margin-left: 5px;
+  color: #fff;
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.signature{
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.si-content textarea{
+  width: 400px;
+  height: 100px;
+  margin: 15px 0 10px 10px;
+  padding: 5px;
+  display: block;
+}
+
+.save-btn{
+  cursor: pointer;
+  padding-left: 400px;
+}
+
+.the-works .user-pic{
+  width: 100px;
+  height: 100px;
+  display: block;
+  padding-left: 20px;
+}
+
+.back-btn{
+  margin-left: 20px;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background: #5599ff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.alert-warning {
+  margin-left: 20px;
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.alert {
+  position: relative;
+  padding: 12px 12px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.input-area{
+  margin-left: 5px;
+  height: 30px;
+  padding: 0 5px;
+}
+
+.change-btn{
+  margin:10px 0 0 90px;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background: #4a4a4a;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.back-btn1{
+  margin:10px 0 0 20px;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background: #5599ff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form-group{
+  margin-top: 5px;
+}

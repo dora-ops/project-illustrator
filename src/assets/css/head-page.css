@@ -1,0 +1,149 @@
+.container {
+  width: 1000px;
+  margin: 100px auto 40px auto;
+}
+
+.scroll-area {
+  width: 1000px;
+  height: 328px;
+  position: relative;
+}
+
+.scroll-img {
+  width: 1000px;
+  height: 328px;
+  position: relative;
+}
+
+.scroll-img .wheel {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.scroll-img .wheel1 {
+  z-index: 1;
+}
+
+.scroll-img .wheel img {
+  width: 1000px;
+  height: 328px;
+  display: block;
+}
+
+.pagination_index {
+  width: 300px;
+  position: absolute;
+  bottom: 20px;
+  left: 390px;
+  z-index: 4;
+}
+
+.pagination_index .pagination_member{
+  width: 60px;
+  height: 10px;
+  background: #fff;
+  margin-right: 20px;
+  float: left;
+  cursor: pointer;
+}
+
+.pagination_index .pagination_active{
+  background: #5599ff;
+}
+
+.pagination_index .pagination_member:hover{
+  background: #5599ff;
+}
+
+.content-title{
+  width: 1000px;
+  line-height: 30px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+.latest,.hottest{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.latest .latest-title,.hottest .hottest-title{
+  width: 960px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 0 0 40px;
+}
+
+.latest-title .change,.hottest-title .change{
+  font-size: 12px;
+  padding: 0 20px 0 0;
+  cursor: pointer;
+}
+
+.latest-title .change:hover,.hottest-title .change:hover{
+  color: #aaa;
+}
+
+.latest .latest-content,.hottest .hottest-content{
+  width: 1000px;
+  overflow: hidden;
+}
+
+.latest-content .latest-list,.hottest-content .hottest-list{
+  width: 210px;
+  height: 300px;
+  margin:0 50px 20px 0;
+}
+
+.latest-content .latest-list:nth-child(4n){
+  margin-right: 0;
+}
+
+.hottest-content .hottest-list:nth-child(4n){
+  margin-right: 0;
+}
+
+.latest-content .latest-list .b-pic,.hottest-content .hottest-list .b-pic{
+  width: 210px;
+  height: 250px;
+  display: block;
+  border-radius: 6px;
+}
+
+.latest-list .l-t,.hottest-list .l-t{
+  padding: 5px 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.latest-list .u-pic,.hottest-list .u-pic{
+  width: 20px;
+  height:20px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.latest-list .l-member,.hottest-list .l-member{
+  background: url("../image/icon02.png") no-repeat 1px;
+  padding: 0 10px 0 25px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.latest-list .s-member,.hottest-list .s-member{
+  background: url("../image/icon01.png") no-repeat 1px;
+  padding: 0 0 0 25px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.latest-content .latest-list .b-pic:hover{
+  opacity: 0.8;
+}
+
+.hottest-content .hottest-list .b-pic:hover{
+  opacity: 0.8;
+}

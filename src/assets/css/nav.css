@@ -1,0 +1,190 @@
+.head-nav{
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #e2e2e2;
+  position: fixed;
+  top:0;
+  left:0;
+  overflow: hidden;
+  background: #fff;
+  z-index: 999;
+}
+
+.header-nav{
+  width: 1000px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.header-nav .logo{
+  width: 160px;
+  height: 70px;
+  display: block;
+  float: left;
+}
+
+nav {
+  width: 80px;
+  height: 30px;
+  float: left;
+  background: #2ba0db;
+  margin-top: 17px;
+  border-radius: 10px;
+}
+
+nav ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 26px;
+  transition: 0.3s linear;
+
+}
+
+nav ul li:hover {
+  width: 80px;
+  height: 30px;
+  background: #126d9b;
+  border-radius: 10px;
+}
+
+nav ul li ul {
+  border-bottom: 5px solid #2ba0db;
+  display: none;
+  position: absolute;
+  width: 250px;
+}
+
+nav ul li ul li {
+  border-top: 1px solid #444;
+  display: block;
+}
+
+nav ul li ul li:first-child {
+  border-top: none;
+}
+
+nav ul li ul li a {
+  background: #373737;
+  display: block;
+  padding: 10px 14px;
+}
+
+nav ul li ul li a:hover {
+  background: #126d9b;
+}
+
+nav .fa.fa-angle-down {
+  margin-left: 6px;
+}
+
+.search{
+  width: 240px;
+  overflow: hidden;
+  margin: 17px 0 0 110px;
+}
+
+.search-in{
+  width: 188px;
+  height: 28px;
+  border: 1px #5599ff solid;
+  padding: 0 0 0 10px;
+  border-radius: 15px 0 0 15px;
+  /*display: block;*/
+}
+
+.search input{
+  outline:none;
+}
+
+.search .search-icon{
+  width: 40px;
+  height: 30px;
+  background: #5599ff url("../image/search.png") no-repeat 4px 0;
+  background-size: 30px 30px;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+.user-area{
+  width: 150px;
+  margin-top: 17px;
+  /*display: none;*/
+}
+
+.user-area .login{
+  margin-right: 20px;
+}
+
+.user-area .login:hover{
+  color: #aaa;
+}
+
+.user-area .register:hover{
+  color: #aaa;
+}
+
+.publish-btn{
+  width: 80px;
+  height: 30px;
+  margin: 17px 0 0 40px;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background: #5599ff;
+  cursor: pointer;
+  font-size: 14px;
+  display: none;
+}
+
+.publish-btn:hover{
+  background: #126d9b;
+}
+
+.user-area1{
+  width: 200px;
+  display: none;
+}
+
+.user-area1 .user-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.user-img img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.user-area1 .user-name{
+  line-height: 60px;
+  margin-right: 10px;
+}
+
+.user-area1 .user-quit{
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.user-area1 .user-quit:hover{
+  color: #aaa;
+}

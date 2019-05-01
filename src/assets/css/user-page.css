@@ -1,0 +1,151 @@
+#userPage,#userPage03,#userPage04{
+  width: 100%;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.us-container{
+  width: 1000px;
+  margin: 80px auto 20px auto;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.us-section {
+  border-bottom: 1px solid #e8e8e8;
+  clear: left;
+  float: left;
+  padding: 18px 0;
+  position: relative;
+  width: 150px;
+  z-index: 3;
+  font-size: 13px;
+  color: #6f6f6f;
+  line-height: 26px;
+  background: #fafafa;
+}
+
+.us-section:after {
+  box-shadow: inset -3px 0 5px -5px rgba(0, 0, 0, 0.25);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 145px;
+  position: absolute;
+  top: 0;
+  width: 5px;
+  z-index: 3;
+}
+
+.us-section .sideNav li.active  {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.us-section .sideNav li  {
+  display: block;
+  line-height: 45px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.the-works{
+  width: 800px;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+.the-works .us-title{
+  padding: 20px;
+}
+
+.se-content .se-list{
+  width: 210px;
+  height: 300px;
+  margin:0 50px 20px 0;
+}
+
+.se-content .se-list:nth-child(3n){
+  margin-right: 0;
+}
+
+.se-content .se-list .b-pic{
+  width: 210px;
+  height: 250px;
+  display: block;
+  border-radius: 6px;
+}
+
+.se-list .l-t{
+  padding: 5px 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.se-list .u-pic{
+  width: 20px;
+  height:20px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.se-list .l-member{
+  background: url("../image/icon02.png") no-repeat 1px;
+  padding: 0 10px 0 25px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.se-list .s-member{
+  background: url("../image/icon01.png") no-repeat 1px;
+  padding: 0 0 0 25px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.se-content .se-list .b-pic:hover{
+  opacity: 0.8;
+}
+
+.us-cancel{
+  font-size: 14px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.us-cancel:hover{
+  color: #aaa;
+}
+
+.se-list1{
+  margin:0 20px 20px 0;
+  overflow: hidden;
+}
+
+.se-list1 .u-pic1{
+  width:60px;
+  height: 60px;
+  display: block;
+}
+
+.se-list1 .n-t{
+  padding-left: 7px;
+  font-weight: bold;
+}
+
+.se-list1 .us-cancel1{
+  padding-left: 7px;
+  font-size: 14px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.se-list1 .us-cancel1:hover{
+  color: #aaa;
+}
