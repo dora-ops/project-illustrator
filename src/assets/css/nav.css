@@ -148,7 +148,7 @@ nav .fa.fa-angle-down {
   background: #5599ff;
   cursor: pointer;
   font-size: 14px;
-  display: none;
+  /* display: none; */
 }
 
 .publish-btn:hover{
@@ -157,7 +157,7 @@ nav .fa.fa-angle-down {
 
 .user-area1{
   width: 200px;
-  display: none;
+  /* display: none; */
 }
 
 .user-area1 .user-img{

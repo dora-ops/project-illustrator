@@ -29,7 +29,7 @@ export default new Router({
       path: '/HomePage',
       component: HomePage
     }, {
-      path: '/Details',
+      path: '/Details/:id',
       component: Details
     }, {
       path: '/Register',
@@ -41,7 +41,7 @@ export default new Router({
       path: '/Upload',
       component: Upload
     },{
-      path: '/SearchDetails',
+      path: '/SearchDetails/:id',
       component: SearchDetails
     },{
       path: '/UserPage',

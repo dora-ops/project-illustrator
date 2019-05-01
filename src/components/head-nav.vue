@@ -17,18 +17,18 @@
         </div>
       </nav>
       <div class="search fl">
-        <input class="search-in fl" type="text" placeholder="请输入搜索内容" id="username"/>
-        <router-link to="/SearchDetails"><div class="search-icon fl"></div></router-link>
+        <input class="search-in fl" v-model="text" type="text" placeholder="请输入搜索内容" id="username"/>
+        <router-link :to="'/SearchDetails/'+text"><div class="search-icon fl"></div></router-link>
       </div>
-      <router-link to="/Upload"><div class="publish-btn fl">+  发布</div></router-link>
-      <div class="user-area fr">
+      <router-link to="/Upload"><div class="publish-btn fl" v-if="!f">+  发布</div></router-link>
+      <div class="user-area fr" v-if="f">
         <router-link to="/Login"><div class="login fl">登录</div></router-link>
         <router-link to="/Register"><div class="register fl">注册</div></router-link>
       </div>
-      <div class="user-area1 fr">
+      <div class="user-area1 fr" v-else>
         <div class="user-img fl"><img src="../assets/image/head-image.png" alt="头像"/></div>
         <router-link to="/UserPage"><div class="user-name fl">用户名</div></router-link>
-        <div class="user-quit fl">退出</div>
+        <div class="user-quit fl" @click="quit()">退出</div>
       </div>
     </div>
   </div>
@@ -41,10 +41,19 @@
     name: 'head-nav',
     data () {
       return {
-        msg: ''
+        msg: '',
+        f:false,
+        text:''
       }
-    },methods:{
-
+    },
+    created(){
+       this.f= localStorage.getItem('user')==undefined
+    },
+    methods:{
+        quit(){
+            window.localStorage.removeItem('user')
+            this.$router.push('/Login');
+        }
     },components:{
 
     }

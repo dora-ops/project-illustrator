@@ -94,7 +94,7 @@
 .latest-content .latest-list,.hottest-content .hottest-list{
   width: 210px;
   height: 300px;
-  margin:0 50px 20px 0;
+  margin:0 40px 20px 0;
 }
 
 .latest-content .latest-list:nth-child(4n){
