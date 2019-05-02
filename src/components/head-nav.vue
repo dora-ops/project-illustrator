@@ -26,8 +26,8 @@
         <router-link to="/Register"><div class="register fl">注册</div></router-link>
       </div>
       <div class="user-area1 fr" v-else>
-        <div class="user-img fl"><img src="../assets/image/head-image.png" alt="头像"/></div>
-        <router-link to="/UserPage"><div class="user-name fl">用户名</div></router-link>
+        <div class="user-img fl"><img :src="user.photo" alt="头像"/></div>
+        <router-link to="/UserPage"><div class="user-name fl">{{user.nickname}}</div></router-link>
         <div class="user-quit fl" @click="quit()">退出</div>
       </div>
     </div>
@@ -37,17 +37,37 @@
 
 <script>
 //  import {myFun} from '../assets/js/nav.js';
+import {
+  pub_content,
+  users,
+  resource,
+  commentlist,
+  user_pub,
+  user_follow
+} from "../sqlMap.js";
   export default {
     name: 'head-nav',
     data () {
       return {
         msg: '',
         f:false,
-        text:''
+        text:'',
+        user:{}
       }
     },
     created(){
        this.f= localStorage.getItem('user')==undefined
+       if (!this.f) {
+         var user= JSON.parse(localStorage.getItem('user')) 
+          var  sql=users.getOne.replace('?',user.id)
+        this.$http
+            .post("action", {
+              sql: sql
+            })
+            .then(res => {
+                this.user=res.data[0]
+            })
+       }
     },
     methods:{
         quit(){

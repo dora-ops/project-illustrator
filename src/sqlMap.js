@@ -159,13 +159,14 @@ const users={
     updateBio:'update users set bio="?" where id=?',
     updateNick:'update users set nickname="?" where id=?',
     updatePass:'update users set password="?" where id=?',
+    updatePhoto:'update users set photo="?" where id=?',
 }
 
 const pub_content={
     getOne: 'select * from pub_content where id=?',
     getAll:'select * from pub_content',
     find:'select * from pub_content where cus_id=?',
-    findByTitle:'select * from pub_content where title="?"',
+    findByTitle:'select * from pub_content where title like "%?%"',
     delete:'delete  from pub_content where id=?',
     inc_like:'update pub_content set like_count=like_count+1 where id=?',
     des_like:'update pub_content set like_count=like_count-1 where id=?',

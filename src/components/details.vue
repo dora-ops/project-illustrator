@@ -77,7 +77,7 @@
                 <div class="more-title">更多作品</div>
                 <ul class="more-content">
                     <li class="more-list fl" v-for="item in pubList" :key="item.id">
-                        <router-link :to="'/Details/'+item.id"><img class="b-pic" :src="item.url" alt="插画" /></router-link>
+                        <a :href="'#/Details/'+item.id"> <img class="b-pic" :src="item.url" alt="插画" /></a>
                         <div class="m-t">{{item.title}}</div>
                         <div class="l-member fl">
                             <span>{{item.like_count}}</span>
@@ -116,7 +116,7 @@ export default {
       images: [],
       tags: [],
       foll: 0,
-      follCount:0,
+      follCount: 0,
       toLike: 0,
       likeCount: 0,
       content: "",
@@ -125,6 +125,17 @@ export default {
       pubList: []
     };
   },
+
+  watch: {
+    $route(to, from) {
+      //监听路由是否变化
+    //   debugger
+      if (to.params.id != from.params.id) {
+         location.reload()
+      }
+    }
+  },
+
   created() {
     var currentUser = JSON.parse(localStorage.getItem("user"));
     let id = this.$route.params.id;
@@ -196,21 +207,21 @@ export default {
             .then(res => {
               if (res.data.length != 0) {
                 this.foll = 2;
-                 this.follCount = res.data.length;
+                this.follCount = res.data.length;
               } else {
                 this.foll = 3;
               }
             });
         }
         //发布人信息
-        sql=users.getOne.replace('?',data.cus_id)
+        sql = users.getOne.replace("?", data.cus_id);
         this.$http
-            .post("action", {
-              sql: sql
-            })
-            .then(res => {
-                this.user=res.data[0]
-            })
+          .post("action", {
+            sql: sql
+          })
+          .then(res => {
+            this.user = res.data[0];
+          });
         this.detail = data;
       });
   },

@@ -2,7 +2,7 @@
     <div id="search-details">
         <v-nav></v-nav>
         <div class="se-container">
-            <div class="se-title">关键字：3d</div>
+            <div class="se-title">关键字：{{text}}</div>
             <div class="se-subtitle">{{count}}条记录</div>
         </div>
         <ul class="se-content">
@@ -34,12 +34,14 @@ export default {
   data() {
     return {
       pubList: [],
-      count:0
+      count:0,
+      text:''
     };
   },
   created() {
     let id = this.$route.params.id;
-    var sql = pub_content.findByTitle.replace("?", id);
+    this.text=id
+    var sql = pub_content.findByTitle.replace("?", id)
 
     this.$http
       .post("action", {

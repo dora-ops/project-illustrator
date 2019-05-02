@@ -72,8 +72,8 @@ export default {
           sql: sql
         })
         .then(res => {
-          // var data = res.data;
-          // this.pubList = data;
+          this.$router.push('/');
+
         });
     }
   }

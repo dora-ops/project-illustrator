@@ -32,13 +32,13 @@
                 <div class="us-title">我的资料</div>
                 <div class="my-box">
                     <div class="my-left fl">
-                        <img src="../assets/image/head-image.png" />
+                        <img :src="user.photo" />
                         <router-link to="/UserPage0501">
                             <div class="modify">修改头像</div>
                         </router-link>
                     </div>
                     <div class="my-right fl">
-                        <div class="my-name">梦栖
+                        <div class="my-name">{{user.nickname}}
                             <router-link to="/UserPage0502">
                                 <span class="modify1">修改</span>
                             </router-link>
@@ -69,10 +69,24 @@ export default {
   },
   data() {
     return {
-      bio: ""
+      bio: "",
+      user:{}
     };
   },
-  created() {},
+  created() {
+      var currentUser = JSON.parse(localStorage.getItem("user"))
+      var sql = users.getOne
+        .replace("?", currentUser.id)
+        
+      this.$http
+        .post("action", {
+          sql: sql
+        })
+        .then(res => {
+            this.user=res.data[0]
+            this.bio=res.data[0].bio
+        });
+  },
   methods: {
     updateBio() {
       var currentUser = JSON.parse(localStorage.getItem("user"));

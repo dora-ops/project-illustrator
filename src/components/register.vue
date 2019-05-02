@@ -24,12 +24,12 @@
                             <div class="login-input">
                                 <label>
                                     <i class="heart">*</i>请设置密码：</label>
-                                <input type="text" v-model="form.password" class="list-input" id="password" name="info[password]" placeholder="">
+                                <input type="password" v-model="form.password" class="list-input" id="password" name="info[password]" placeholder="">
                             </div>
                             <div class="login-input">
                                 <label>
                                     <i class="heart">*</i>请确认密码：</label>
-                                <input type="text" class="list-input" id="password1" name="info[password]" placeholder="">
+                                <input type="password" class="list-input" id="password1" name="info[password]" placeholder="">
                             </div>
                             <div class="login-input">
                                 <label>

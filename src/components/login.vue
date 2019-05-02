@@ -25,9 +25,9 @@
                         </div>
                         <!-- 图片验证码开始 fore3-->
                         <div id="o-authcode" class="item item-vcode item-fore3 hide ">
-                            <input type="text" id="authcode" class="itxt itxt02" name="authcode" tabindex="3">
-                            <input type="button" id="code" class="verify-code" value="2E5H">
-                            <a href="#">看不清换一张</a>
+                            <input type="text" v-model="form.code" id="authcode" class="itxt itxt02" name="authcode" tabindex="3">
+                            <img style="-webkit-user-select: none" :src="authImgUrl">
+                            <a href="#" @click="changeAuthImg()">看不清换一张</a>
                         </div>
                         <!-- 自动登录开始fore4 -->
                         <div class="item item-fore4">
@@ -66,12 +66,18 @@ import { users } from "../sqlMap.js";
 export default {
   data() {
     return {
-      form: {}
+      form: {},
+      authImgUrl: "http://localhost:3000/api/base/code"
     };
   },
   methods: {
-   
-      login() {
+    login() {
+      this.$http.get("getcode").then(res => {
+        //   debugger
+        if (this.form.code != res.data) {
+          this.$message.error("验证码错误");
+          return
+        }
         var sql = users.login
           .replace("?", this.form.nickname)
           .replace("?", this.form.password);
@@ -83,13 +89,17 @@ export default {
             if (res.data.length == 0) {
               this.$message.error("用户密码错误");
             } else {
-                localStorage.setItem('user',JSON.stringify(res.data[0]))
+              localStorage.setItem("user", JSON.stringify(res.data[0]));
               setTimeout(() => {
-               this.$router.push('/HomePage');
+                this.$router.push("/HomePage");
               }, 1000);
             }
           });
-      
+      });
+    },
+    changeAuthImg() {
+      this.authImgUrl =
+        "http://localhost:3000/api/base/code" + "?" + new Date().getTime();
     }
   }
 };
