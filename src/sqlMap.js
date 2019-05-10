@@ -191,7 +191,7 @@ const user_follow={
 
 
 const commentlist={
-    find: 'select * from commentlist where pub_id=?',
+    find: 'select c.id ,c.cus_nickname,c.`comment`,c.cus_id,c.pub_id ,c.create_time from commentlist c where pub_id=?',
 }
 
 

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HomePage from '@/components/HomePage'
 import Details from '@/components/details'
-import Details1 from '@/components/details1'
+
 import Register from '@/components/Register'
 import Login from '@/components/Login'
 import Upload from '@/components/Upload'
@@ -58,9 +58,6 @@ export default new Router({
     },{
       path: '/UserPage0201',
       component: UserPage0201
-    }, {
-      path: '/Details1',
-      component: Details1
     },{
       path: '/UserPage05',
       component: UserPage05

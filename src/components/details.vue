@@ -145,6 +145,7 @@ export default {
         sql: commentlist.find.replace("?", id)
       })
       .then(res => {
+        
         this.commentList = res.data;
         this.comment_count = res.data.length;
       });
@@ -153,6 +154,7 @@ export default {
         sql: pub_content.topN
       })
       .then(res => {
+         
         this.pubList = res.data;
       });
     var sql = pub_content.getOne.replace("?", id);
@@ -161,6 +163,7 @@ export default {
         sql: sql
       })
       .then(res => {
+          
         var data = res.data[0];
         this.tags = JSON.parse(data.tag);
         var resList = JSON.parse(data.res_id);

@@ -67,6 +67,7 @@ export default {
           sql: sql
         })
         .then(res => {
+          this.pubList=[]
           this.request();
         });
     },
