@@ -2,20 +2,7 @@
   <div class="head-nav">
     <div class="header-nav">
       <router-link to="/"><img class="logo" src="../assets/image/logo.png" /></router-link>
-      <nav style="display: none">
-        <div class="container fl">
-          <!--<ul>-->
-            <!--<li>-->
-              <!--<a href="#">作品</a>-->
-              <!--&lt;!&ndash;<ul id="down">&ndash;&gt;-->
-                <!--&lt;!&ndash;<li><a href="#">Category One</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li><a href="#">Category Two</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li><a href="#">Category Three</a></li>&ndash;&gt;-->
-              <!--&lt;!&ndash;</ul>&ndash;&gt;-->
-            <!--</li>-->
-          <!--</ul>-->
-        </div>
-      </nav>
+      
       <div class="search fl">
         <input class="search-in fl" v-model="text" type="text" placeholder="请输入搜索内容" id="username"/>
         <router-link :to="'/SearchDetails/'+text"><div class="search-icon fl"></div></router-link>

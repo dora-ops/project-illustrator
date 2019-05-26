@@ -5,6 +5,8 @@ import Details from '@/components/details'
 
 import Register from '@/components/Register'
 import Login from '@/components/Login'
+import Card from '@/components/Card'
+import pcard from '@/components/pCard'
 import Upload from '@/components/Upload'
 import SearchDetails from '@/components/search-details'
 import UserPage from '@/components/UserPage'
@@ -70,6 +72,14 @@ export default new Router({
     },{
       path: '/UserPage0503',
       component: UserPage0503
+    },
+    {
+        path: '/card',
+        component: Card
+    },
+    {
+        path: '/pcard',
+        component: pcard
     }
   ]
 })
