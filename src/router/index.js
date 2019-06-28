@@ -77,9 +77,5 @@ export default new Router({
         path: '/card',
         component: Card
     },
-    {
-        path: '/pcard',
-        component: pcard
-    }
   ]
 })
