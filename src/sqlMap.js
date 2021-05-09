@@ -94,7 +94,7 @@ const courselist={
 
 
 const users={
-    login: 'select * from users where nickname="?" and password="?" ',
+    login: 'select * from users where `nickname`="?" and `password` ="?" ',
     getOne: 'select * from users where id=?',
     
     updateF:'update users set followers="?" where id=?',
@@ -139,7 +139,7 @@ const commentlist={
 
 
 module.exports = {
-    pageList,
+    // pageList,
     userOpt,
     work,
     base,
