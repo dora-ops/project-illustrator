@@ -94,15 +94,15 @@ const courselist={
 
 
 const users={
-    login: 'select * from users where `nickname`="?" and `password` ="?" ',
-    getOne: 'select * from users where id=?',
+    login: 'select * from person where `nickname`="?" and `password` ="?" ',
+    getOne: 'select * from person where id=?',
     
-    updateF:'update users set followers="?" where id=?',
-    updateL:'update users set likes="?" where id=?',
-    updateBio:'update users set bio="?" where id=?',
-    updateNick:'update users set nickname="?" where id=?',
-    updatePass:'update users set password="?" where id=?',
-    updatePhoto:'update users set photo="?" where id=?',
+    updateF:'update person set followers="?" where id=?',
+    updateL:'update person set likes="?" where id=?',
+    updateBio:'update person set bio="?" where id=?',
+    updateNick:'update person set nickname="?" where id=?',
+    updatePass:'update person set password="?" where id=?',
+    updatePhoto:'update person set photo="?" where id=?',
 }
 
 const pub_content={

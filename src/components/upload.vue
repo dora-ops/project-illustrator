@@ -20,7 +20,7 @@
                     <table class="a4-tab" cellspacing="3" cellpadding="3">
                         <tr>
                             <td width="120" align="center" valign="middle">
-                                <strong>作品标题</strong>
+                                <strong>食品标题</strong>
                             </td>
                             <td height="50">
                                 <input type="text" v-model="form.title" name="title" id="title" class="form-control" style="width:450px;" value="">
@@ -32,32 +32,32 @@
                                 <strong>说点什么</strong>
                             </td>
                             <td height="50">
-                                <textarea name="contents" v-model="form.description" id="contents" class="form-control" placeholder="临摹或参考作品请注明" style="width:453px; height:100px;padding: 10px; "></textarea>
+                                <textarea name="contents" v-model="form.description" id="contents" class="form-control" placeholder="食品说明" style="width:453px; height:100px;padding: 10px; "></textarea>
                             </td>
                         </tr>
                         <tr>
                             <td width="120" align="center" valign="middle">
                                 <strong>
-                                    <span style="color:red">*</span>作品属性</strong>
+                                    <span style="color:red">*</span>食品属性</strong>
                             </td>
                             <td height="50">
                                 <div class="form-check form-check-inline fl">
                                     <input type="radio" v-model="form.property" name="albumtype" id="inlineRadio1" value="1">
-                                    <label for="inlineRadio1">原创</label>
+                                    <label for="inlineRadio1">品类1</label>
                                 </div>
                                 <div class="form-check form-check-inline fl">
                                     <input type="radio" v-model="form.property" name="albumtype" id="inlineRadio2" value="2">
-                                    <label for="inlineRadio2">同人</label>
+                                    <label for="inlineRadio2">品类2</label>
                                 </div>
                                 <div class="form-check form-check-inline fl">
                                     <input type="radio" v-model="form.property" name="albumtype" id="inlineRadio3" value="3">
-                                    <label for="inlineRadio3">练习</label>
+                                    <label for="inlineRadio3">品类3</label>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td align="center" valign="top">
-                                <strong style="position:relative; top:10px;">作品标签</strong>
+                                <strong style="position:relative; top:10px;">食品标签</strong>
                             </td>
                             <el-select v-model="tag" multiple filterable allow-create default-first-option placeholder="标签">
                                 <!-- <el-option >
@@ -69,7 +69,7 @@
 
                         <tr>
                             <td width="120" valign="middle" align="center">
-                                <strong>作品保护</strong>
+                                <strong>食品保护</strong>
                             </td>
                             <td width="579" height="25">
                                 <label class="radio-inline">
@@ -89,22 +89,12 @@
                 </div>
             </div>
             <div class="con-right fr">
-                <p style="text-align: center;padding: 20px;font-size: 16px;">作品发布规则</p>
+                <p style="text-align: center;padding: 20px;font-size: 16px;">食品发布规则</p>
                 <div style="padding: 0 20px;">
                     <p>允许：</p>
-                    <p>手绘/软件绘制的绘画作品</p>
-                    <p>原创绘画作品</p>
-                    <p>同人或临摹作品</p>
-                    <p>绘画作画过程</p>
+                   
                     <br>
-                    <p>禁止：</p>
-                    <p>转载他人的画作</p>
-                    <p>展示与绘画无关的照片</p>
-                    <p>违反国家法规的色情血腥暴力等图片</p>
-                    <p>水印严重影响画面的画作</p>
-                    <p>作品中带有二维码</p>
-                    <br>
-                    <p style="margin-top:10px;font-size:14px">提示：不符合规则的作品将无法通过审核，维护原创平台的好环境需大家共同努力！</p>
+                    <p style="margin-top:10px;font-size:14px">提示：不符合规则的食品将无法通过审核，维护原创平台的好环境需大家共同努力！</p>
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
         <div class="container">
             <div class="scroll-area">
                 <ul class="scroll-img">
-                    <li class="wheel wheel1"><img src="../assets/image/wheel2.png" alt="轮播图" /></li>
+                    <li class="wheel wheel1"><img src="../assets/image/1.jpg" alt="轮播图" /></li>
                     <li class="wheel"><img src="../assets/image/wheel1.png" alt="轮播图" /></li>
                     <!--<li class="wheel"><img src="" alt="轮播图"/></li>-->
                 </ul>

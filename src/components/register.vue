@@ -45,7 +45,7 @@
                             <div class="item-ifo">
                                 <input type="checkbox" id="readme" checked="checked" class="checkbox">
                                 <label for="protocol">我已阅读并同意
-                                    <a id="protocol" class="blue" href="#">《插画网站用户协议》</a>
+                                    <a id="protocol" class="blue" href="#">《大众点评网站用户协议》</a>
                                 </label>
                                 <span class="clr"></span>
                             </div>
